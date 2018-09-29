@@ -1,0 +1,19 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	private void setupDatabase(ConnectionSource connectionSource) throws Exception {
+
+		accountDao = DaoManager.createDao(connectionSource, Account.class);
+		orderDao = DaoManager.createDao(connectionSource, Order.class);
+
+		// if you need to create the table
+		TableUtils.createTable(connectionSource, Account.class);
+		TableUtils.createTable(connectionSource, Order.class);
+	}
+
+
+}

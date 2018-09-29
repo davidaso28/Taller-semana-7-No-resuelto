@@ -1,0 +1,11 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+class Pruebas {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+	 
+
+}
